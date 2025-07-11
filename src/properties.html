@@ -1,0 +1,38 @@
+@@include('./components/header/header.html', {"title": "SpaceBook"})
+@@include('./components/nav/nav.html')
+@@include('./components/banner/banner.html',{"title":"Our Properties"})
+<section class="our-properties mt-5" style="background-color: transparent;">
+    <div class="container-fluid">
+      <!-- <h3 class="heading animate__animated animate__fadeInUp">
+        <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>Our Latest Project</span>
+      </h3> -->
+      <h2 class="title animate__animated animate__fadeInUp">Our Latest Properties</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service1.webp","address":"39581 Rohan Estates, New York","status":"ongoing"})
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service2.webp","address":"39581 Rohan Estates, New York","status":"ready to move"})
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service3.webp","address":"39581 Rohan Estates, New York","status":"completed"})
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service3.webp","address":"39581 Rohan Estates, New York","status":"completed"})
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service1.webp","address":"39581 Rohan Estates, New York","status":"ongoing"})
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service3.webp","address":"39581 Rohan Estates, New York","status":"completed"})
+        </div>
+      </div>
+    </div>
+  </section>
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')

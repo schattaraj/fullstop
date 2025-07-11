@@ -1,0 +1,125 @@
+.footer {
+    padding: 20px 0;
+    background-color: $text;
+
+    /* Light background color */
+    .nav-link {
+        color: #fff !important;
+        /* Dark text color */
+        transition: color 0.3s;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            margin-bottom: 6px;
+        }
+    }
+
+    .lab {
+        margin-right: 16px;
+        font-size: 22px;
+    }
+
+    .nav-link:hover {
+        color: #007bff;
+        /* Change color on hover */
+    }
+
+    .copyright {
+        margin-top: 20px;
+        /* Add space above the copyright section */
+        padding-top: 10px;
+        /* Add padding to the top */
+        border-top: 1px solid #dee2e6;
+        /* Add a top border for separation */
+        // color: #6c757d; /* Slightly lighter text color */
+        color: #fff;
+        /* Slightly lighter text color */
+        font-size: 0.9rem;
+        /* Slightly smaller font size */
+    }
+
+    @media (max-width:575.99px) {
+        padding-bottom: 84px;
+        padding-top: 0;
+
+        .navbar {
+            display: none;
+        }
+
+        .copyright {
+            margin-top: 0;
+        }
+    }
+
+    .navbar-brand {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        img {
+            height: 100px;
+        }
+        p{
+            color: #fff;
+            margin-bottom: 2px;
+            line-height: 100%;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 16px;
+          }
+          span{
+            font-size: 14px;
+            color: #fff;
+            font-weight: 600;
+            &.color{
+              color: #5e94da;
+            }
+          }
+    }
+}
+
+
+.footer-sticky-mobile {
+    background: $primary;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    margin-left: 0px;
+    box-shadow: 0 0 21px 8px rgb(255, 255, 255, .26);
+
+    img {
+        height: 30px;
+    }
+
+    display: none;
+    justify-content: space-around;
+
+    a {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+
+        span {
+            display: block;
+            margin-top: 4px;
+        }
+    }
+
+    @media (max-width:575.99px) {
+        display: flex;
+        overflow-x:hidden;
+    }
+}

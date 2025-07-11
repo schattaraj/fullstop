@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FULLSTOP</title>
+    <link rel="shortcut icon" href="assets/default/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/default/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <link rel="stylesheet" href="library/style/app.css">    
+</head>
+<body>
+
+
+<header>
+    <div class="top-header">
+        <div class="container">
+            <div class="flex">
+        <div class="left">
+            <a href="mailto:info@fullstop.com">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                info@fullstop.com</a>
+            <a href="tel:1234567890">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                123 456 7890</a>
+        </div>
+        <div class="right">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+<div class="nav_area">
+    <div class="container">
+        <!-- <div class="row"> -->
+            <nav class="navbar navbar-expand-xl navbar-light w-100">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/fullstop.png" alt="Logo">
+                    <!-- <div class="text">
+                        Powered By Subrata
+                </div> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="properties.html">Properties</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        <!-- </div> -->
+    </div>
+</div>
+</header>
+
+
+<section class="banner">
+  <video class="video" src="/assets/videos/hero-2-video.mp4" loop muted autoplay></video>
+<div class="content">  
+  <h2 class="title">Discover your place to live</h2>
+  <p>Packed with new features and improvements, it is the biggest all-in-one solution for real estate companies and professionals</p>
+  <div class="search-area py-2">
+    <form action="/">
+      <!-- <label for="city" class="form-label mb-0">City</label> -->
+      <div class="form-group mb-0">
+        
+        <select name="city" id="city" class="w-100 form-select js-example-basic-single">
+          <option value="">Select City</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Delhi">Delhi</option>
+        </select>
+      </div>
+      <button class="btn">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          Search</span></button>
+    </form>
+  </div>
+</div>
+</section>
+<section class="categories">
+  <div class="container">
+  <div class="heading">
+    <span>categories</span>
+    <h3>Choose Your Property type</h3>
+  </div>
+  <div class="swiper swiper-categories">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/service1.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Residential</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/banner2.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Commercial</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/service2.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Industrial</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/service3.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Land</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/banner1.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Retail</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/banner1.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Retail</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/banner1.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Retail</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+    <img src="/assets/images/banner1.webp" alt="Industrial" class="category-image">
+    <div class="details">
+      <div class="top">
+      <span>17 Properties</span>
+    <h3 class="category-title">Retail</h3>
+  </div>
+    <a href="#" class="btn"><span>Read More</span>
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  
+</div>
+      </div> 
+    </div>
+  </div>
+  </div>
+</section>
+<section class="about-us">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="image">
+          <img src="assets/images/collov-home-design-4_jQL4JCS98-unsplash.webp" alt="" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text aos-item aos-init aos-animate" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
+          <!-- <h3 class="heading">
+            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span>About Us</span>
+          </h3> -->
+          <h2 class="title">About Us</h2>
+          <p>At <b>FullStop</b>, we believe that every space tells a story. Our mission is to transform
+            your dream home interior into a stunning, functional environments that reflect your style and
+            personality. With end to end expertise for design and a passion for innovation, we specialize in
+            crafting unique spaces that blend aesthetics with practicality.</p>
+            <p>Whether it’s a cozy home, a dynamic office, or a luxurious commercial space, our expert team
+              works closely with clients to bring their vision to reality. From concept to execution, we
+              prioritize quality, creativity, skill, dedication and attention to detail, ensuring that every project is
+              a masterpiece.</p>
+              <p>At Spacebook Interior, we don’t just design spaces—we create experiences. Let us help you to
+                build the perfect space that inspires and elevates your everyday living.</p>
+          <a href="#" class="btn">
+            <span>Read More</span>
+            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="our-properties">
+  <div class="container">
+    <div class="flex" data-aos="fade-up">
+      <div class="left">
+    <!-- <h3 class="heading animate__animated animate__fadeInUp">
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span>Our Services</span>
+    </h3> -->
+    <h2 class="title">Featured Properties</h2>
+  </div>
+  <a href="#" class="btn btn-secondary"><span>View All</span>   
+    <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" />
+    <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg></a>
+  </div>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="property">
+    <div class="status ongoing">ongoing</div>
+    <div class="swiper swiper-images gallery-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service1.webp">
+          <img src="assets/images/service1.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service1.webp">
+          <img src="assets/images/service1.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>    
+    <div class="text animate__animated animate__fadeInUp">
+      <h3>New apartment nice view</h3>
+      <p><i class="fa-solid fa-location-dot"></i> 39581 Rohan Estates, New York</p>
+      <div class="info">
+        <span><i class="fa-solid fa-bed"></i> 4</span>
+        <span><i class="fa-solid fa-shower"></i> 2</span>
+        <span><i class="fa-solid fa-expand"></i> 1500 sqft</span>
+      </div>
+      <div class="flex">
+        <span>$179,800.00</span>
+        <a href="property-details.html" class="btn btn-secondary"><span>View Details</span>
+          <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>      
+    </div>
+  </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="property">
+    <div class="status ready to move">ready to move</div>
+    <div class="swiper swiper-images gallery-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service2.webp">
+          <img src="assets/images/service2.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service2.webp">
+          <img src="assets/images/service2.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>    
+    <div class="text animate__animated animate__fadeInUp">
+      <h3>New apartment nice view</h3>
+      <p><i class="fa-solid fa-location-dot"></i> 39581 Rohan Estates, New York</p>
+      <div class="info">
+        <span><i class="fa-solid fa-bed"></i> 4</span>
+        <span><i class="fa-solid fa-shower"></i> 2</span>
+        <span><i class="fa-solid fa-expand"></i> 1500 sqft</span>
+      </div>
+      <div class="flex">
+        <span>$179,800.00</span>
+        <a href="property-details.html" class="btn btn-secondary"><span>View Details</span>
+          <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>      
+    </div>
+  </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="property">
+    <div class="status completed">completed</div>
+    <div class="swiper swiper-images gallery-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service3.webp">
+          <img src="assets/images/service3.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="swiper-slide" data-lg-size="1600-1067" data-src="assets/images/service3.webp">
+          <img src="assets/images/service3.webp" alt="">
+          <div class="overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>    
+    <div class="text animate__animated animate__fadeInUp">
+      <h3>New apartment nice view</h3>
+      <p><i class="fa-solid fa-location-dot"></i> 39581 Rohan Estates, New York</p>
+      <div class="info">
+        <span><i class="fa-solid fa-bed"></i> 4</span>
+        <span><i class="fa-solid fa-shower"></i> 2</span>
+        <span><i class="fa-solid fa-expand"></i> 1500 sqft</span>
+      </div>
+      <div class="flex">
+        <span>$179,800.00</span>
+        <a href="property-details.html" class="btn btn-secondary"><span>View Details</span>
+          <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>      
+    </div>
+  </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="design-and-build my-5">
+  <div class="container-fluid">
+  <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="image">
+              <img src="assets/images/banner1.webp" alt="">
+          </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="text">
+              <h3>Our Mission</h3>
+              <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
+               <p>To Adding value through expertise and excellence.
+                Our mission statement embodies everything we stand for. The way
+                we do our business, our work culture, our passion for quality, our obsession with innovative technologies and
+                our dedication to provide customer
+                delight and satisfaction.</p>
+          </div>
+      </div>
+  </div>
+  <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="text">
+              <h3>Our Vision</h3>
+              <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
+               <p>The second step that we do is focuses on the technical and finer aspects of
+                  the
+                  Process and It starts with the developing of technical drawings, which
+                  acts as the backbone of the project. The drawings are brought to
+                  life by the state of the art, high-tech manufacturing technology</p>
+          </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="image">
+              <img src="assets/images/banner2.webp" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="image">
+              <img src="assets/images/banner3.webp" alt="">
+          </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up">
+          <div class="text">
+              <h3>Our Strategy</h3>
+              <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
+               <p>To Using innovative methods, latest technologies and expertise by investing in
+                researchers and developments.</p>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+<section class="mission team-section">
+  <div class="container-fluid py-5">
+      <div class="flex justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="left">
+            <h2 class="title text-center mb-5">Administrators</h2>
+          </div>
+      </div>
+      <div class="team">
+          <div class="swiper-our-team">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-up">
+                <div class="swiper-slide">
+                  <div class="image">
+                  <img src="assets/images/avatar1.webp" alt="">
+              </div>
+                  <h3>Akash Acharya</h3>
+                  <p>Founder & CEO</p>
+                  <div class="social-links">
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="fade-up">
+                <div class="swiper-slide">
+                  <div class="image">
+                  <img src="assets/images/avatar2.webp" alt="">
+              </div>
+              <h3>Bijay Acharya</h3>
+              <p>Co-Founder & Managing Director</p>
+              <div class="social-links">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="fade-up">
+                <div class="swiper-slide">
+                  <div class="image">
+                  <img src="assets/images/avatar3.webp" alt="">
+              </div>
+              <h3>Ankita Shah</h3>
+              <p>Marketing Manager</p>
+              <div class="social-links">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+                </div>
+              </div>
+              <div class="col-md-3" data-aos="fade-up">
+                <div class="swiper-slide">
+                  <div class="image">
+                  <img src="assets/images/avatar0.webp" alt="">
+              </div>
+              <h3>Vishal Singh</h3>
+              <p>HR & Coordinator</p>
+              <div class="social-links">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+                </div>
+              </div>
+              </div>
+          </div>  
+      </div>
+  </div>
+</section>
+<div class="our-testimonial" data-aos="fade-up">
+  <!-- <div class="container"> -->
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        <div class="image">
+          <img src="assets/images/banner2.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text">
+          <h3 class="heading">
+            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Client Testimonials</span></h3>
+          <h2 class="title">Trusted by thousand of <span>people & companies.</span></h2>
+          <div class="swiper swiper-testimonial">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+              <div class="starts">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <i class="fa-regular fa-star"></i>                
+              </div>
+              <p>I couldn't be happier with the transformation of my home! From our very first consultation, the team at took the time to understand my vision and preferences.</p>
+              <div class="user">
+                <img src="assets/images/avatar0.webp" alt="">
+                <div class="info">
+                  <h3>Meg Aghamyan</h3>
+                  <p>co. founder</p>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="starts">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                  <i class="fa-regular fa-star"></i>                
+                </div>
+                <p>I couldn't be happier with the transformation of my home! From our very first consultation, the team at took the time to understand my vision and preferences.</p>
+                <div class="user">
+                  <img src="assets/images/avatar1.webp" alt="">
+                  <div class="info">
+                    <h3>arlene mcCoy</h3>
+                    <p>co. founder</p>
+                  </div>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="starts">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>                
+                  </div>
+                  <p>I couldn't be happier with the transformation of my home! From our very first consultation, the team at took the time to understand my vision and preferences.</p>
+                  <div class="user">
+                    <img src="assets/images/avatar2.webp" alt="">
+                    <div class="info">
+                      <h3>arlene mcCoy</h3>
+                      <p>co. founder</p>
+                    </div>
+                  </div>
+                  </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- <h3 class="heading animate__animated animate__fadeInUp"><span>Testimonials</span></h3> -->
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="welcomeModalLabel">Welcome! Please fill out the form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body p-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row">
+            <div class="col-md-5 d-none d-md-block">
+              <img src="assets/images/banner3.webp" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+          <form>
+            <h3>Get a free design consultation</h3>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+              <label for="modal_email">Email</label>
+              <input type="email" class="form-control" id="modal_email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="modal_phone">Phone</label>
+              <input type="tel" class="form-control" id="modal_phone" placeholder="Enter phone number">
+            </div>
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" class="form-control" id="location" placeholder="Enter location">
+            </div>
+            <div class="form-group">
+              <label for="pin">Pin</label>
+              <input type="text" class="form-control" id="pin" placeholder="Enter pin">
+            </div>
+            <button class="btn"><span>Book a Free Consultation</span></button>
+          </form>
+        </div>
+        </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+<div class="footer-sticky-mobile">
+<a href="projects.html">
+    <img src="assets/images/Designs-Icon.png" alt="">
+    <span>Designs</span>
+</a>
+<a href="tel:124567890">
+    <img src="assets/images/Call-Now-CTA.png" alt="">
+    <span>Call Now</span>
+</a>
+<a href="#welcomeModal" data-toggle="modal">
+    <img src="assets/images/BookConsultation-Icon.png" alt="">
+    <span>Get Free Quote</span>
+</a>
+<a href="https://api.whatsapp.com/send/?phone=919907234335&text&type=phone_number&app_absent=0" target="_blank">
+    <img src="assets/images/Whatsapp-Icon.png" alt="">
+    <span>Whatsapp</span>
+</a>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/fullstop.png" alt="Logo">
+                    <div class="text">
+                    <!-- <p>Powered By ADDYADEVELOPER AND INFRASTRUCTURE PVT. LTD.</p> -->
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="widget widget_links">
+                    <div class="widget-title">
+                        <h4 class="title text-light">Address</h4>
+                    </div>
+                    <ul>
+                        <li class="text-light">Corporate Office</li>
+                        <li class="text-light">
+                            <a class=" text-light" href="https://maps.app.goo.gl/ZJaR9YWVEXCS45539" target="_blank">
+                                Ganesh Glory, Gota, Ahmedabad, Gujarat, 382481</a></li>
+                 </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="widget-title">
+                    <h4 class="title text-light">CONTACT US </h4>
+                     <div class="dz-social-icon">
+                    <ul>
+                        <li class=" text-light"><a href="mailto:info@fullstop.com" class="__cf_email__  text-light">info@fullstop.com</a></li>
+                        
+                       
+                        <li class=" text-light"><a href="tel:+919907234335" class="text-light">Tel : +91 9907234335</a></li>
+                                            
+                        <li class="text-light">
+                            <a class="lab la-facebook text-light" href="https://www.facebook.com/profile.php?id=61572378570370&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="lab la-instagram text-light" href="https://www.instagram.com/spacebookinterior.pvt.ltd?igsh=MWRiNXJ4OXkydmRmcw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="footerNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comercial-projects.html">Comercial Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Design & Build</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videos.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        <div class="copyright">
+            <p class="mb-0 text-center">Powered by ADDYADEVELOPER AND INFRASTRUCTURE PVT. LTD</p>
+        </div>
+    </div>
+</footer>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- LightGallery JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+<script src="library/js/app-min.js"></script>
+</body>
+</html>
