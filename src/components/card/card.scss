@@ -1,0 +1,109 @@
+.card{
+    border:none;
+    margin-bottom: 32px;
+    border-radius: $radius;
+    overflow: hidden;
+    // background-color: $secondary;
+    background-color: #fff;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.2);
+    .image{
+        img{
+            height: 256px;
+            width: 100%;
+            object-fit: cover;
+        }
+        position: relative;
+        .play{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                fill: $white;
+               stroke: $white;
+            }
+        }
+    }
+    .text{
+        padding: 32px 32px;
+        background-color:#fff;
+        color: $text;
+        h3{
+            margin-bottom: 4px;
+            font-size: 24px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            a{
+                color: $text;
+                transition: all 0.4s;
+                text-decoration: none;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        p{
+            margin:12px 0;
+        }
+        .btn{
+            // @include btn();
+            margin-bottom: 12px;
+        }
+       .actions{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           a{
+            color: $text;
+        }
+        .left,.right{
+            display: flex;
+            span{
+                margin-right: 16px;
+                svg{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+        .right{
+            svg{
+                margin-right: 16px;
+                transition: all 0.4s;
+            }
+            a{
+               &:hover{
+                   svg{
+                       stroke: $primary;
+                   }
+               }
+               &:last-child{
+                   svg{
+                       margin-right: 0;
+                   }
+               }
+            }
+        }
+       } 
+    }
+    @media (max-width:575px) {
+        .text{
+            .actions{
+                display: block;
+                .left{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}

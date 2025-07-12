@@ -1,7 +1,104 @@
-@@include('./components/header/header.html', {"title": "SpaceBook"})
+@@include('./components/header/header.html', {"title": "FullStop"})
 @@include('./components/nav/nav.html')
-
 @@include('./components/banner/banner.html',{"title":"Blog"})
-
+<div class="blog-page">
+    <div class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="left">
+                        <h3 class="head">Recent Posts</h3>
+    @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner1.webp","link":true})
+    @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner2.webp","link":true})
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <i data-feather="chevron-left"></i>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <i data-feather="chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <h3 class="head">Video Posts</h3>
+    @@include('./components/card/card.html',{"title":"Check Out My New Video","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner3.webp","item":true,"link":true})
+    @@include('./components/card/card.html',{"title":"Check Out My New Video","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/bannerImage.webp","item":true,"link":true})
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <i data-feather="chevron-left"></i>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">...</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <i data-feather="chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="right">
+                        <div class="searchArea">
+                            <form>
+                                <input type="search" placeholder="Search your blog">
+                                <button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                </button>
+                            </form>
+                        </div>
+                        <h3 class="head">Popular Posts</h3>
+                        <ul class="posts">
+                            <li>
+                                <div class="image">
+                                    <img src="assets/images/service1.webp" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4><a href="#">Check Out My New Video</a></h4>
+                                    <p>It is a long established fact that a reader will be distracted by the </p>
+                                    <div class="left"> <span>1 <i data-feather="heart"></i></span> 
+                                        <span>2  <i data-feather="message-square"></i></span></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image">
+                                    <img src="assets/images/service2.webp" alt="">
+                                </div>
+                                <div class="text">
+                                    <h4><a href="#">Check Out My New Video</a></h4>
+                                    <p>It is a long established fact that a reader will be distracted by the </p>
+                                    <div class="left"> <span>1 <i data-feather="heart"></i></span> 
+                                        <span>2  <i data-feather="message-square"></i></span></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3 class="head">Follow Us</h3>
+                        <div class="social">
+                            <a href="#"><i data-feather="instagram"></i></a>
+                            <a href="#"><i data-feather="facebook"></i></a>
+                            <a href="#"><i data-feather="twitter"></i></a>
+                            <a href="#"><i data-feather="linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 @@include('./components/footer/footer.html')
 @@include('./components/footerscript/footerscript.html')

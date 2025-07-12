@@ -11,8 +11,9 @@
 	"dependencies": {
 		"bootstrap": "4.6.0",
 		"browser-sync": "2.26.14",
-		"browser-sync-client": "^2.26.14",
+		"browser-sync-client": "^2.29.3",
 		"del": "6.0.0",
+		"feather-icons": "^4.29.2",
 		"gulp": "4.0.2",
 		"gulp-autoprefixer": "7.0.1",
 		"gulp-clean-css": "4.3.0",

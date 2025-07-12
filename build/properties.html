@@ -76,9 +76,6 @@
                             <a class="nav-link" href="properties.html">Properties</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li> 
-                        <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li> 
                         <li class="nav-item">
@@ -102,7 +99,7 @@
     </div>
 </div>
 <section class="our-properties mt-5" style="background-color: transparent;">
-    <div class="container-fluid">
+    <div class="container">
       <!-- <h3 class="heading animate__animated animate__fadeInUp">
         <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -348,6 +345,15 @@
   </div>
         </div>
       </div>
+      <div class="pagination">
+        <a href="#">&laquo; Prev</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next &raquo;</a>
+      </div>
     </div>
   </section>
 <!-- Modal -->
@@ -424,7 +430,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="col-lg-3 mb-3 mb-lg-0">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/fullstop.png" alt="Logo">
                     <div class="text">
@@ -432,7 +438,7 @@
                 </div>
                 </a>
             </div>
-            <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="col-lg-5 mb-3 mb-lg-0">
                 <div class="widget widget_links">
                     <div class="widget-title">
                         <h4 class="title text-light">Address</h4>
@@ -498,6 +504,29 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <!-- <iframe src="https://www.youtube.com/embed/nfNc0XJdZWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video 
+          controls poster="assets/images/banner1.webp">
+       <source src="assets/videos/hero-2-video.mp4" type="video/mp4">
+   </video>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

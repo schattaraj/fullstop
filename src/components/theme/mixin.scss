@@ -15,3 +15,15 @@ height: $h;
 background-color: $bg;
 opacity: $op;
 }
+@mixin btn{
+  // background-color: $primary;
+  background: linear-gradient(90deg, $primarydark 0%, $primary 26.62%, $primary 77.56%, $primary 101.22%);
+  color:$white;
+  box-shadow: none;
+  border-radius: $radius;
+  font-size: 14px;
+  transition: all 0.4s;
+  &:hover{
+    background-color: $hover;
+  }
+}

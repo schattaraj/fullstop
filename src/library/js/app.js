@@ -3,6 +3,9 @@ const ProjectPath = '';
 // $(function () {
 //     $('[data-toggle="tooltip"]').tooltip();
 // });
+$(document).ready(function() {
+  feather.replace();
+  });
 
 var swiper1 = new Swiper(".mySwiper", {
 //   cssMode: true,

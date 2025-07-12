@@ -47,6 +47,7 @@ gulp.task('htmlValidator', async function () {
 
 // Merge ALL JS
 gulp.task('scripts', function () {
+    console.log('JS Files:', appVars.JS_Library); // Add this for debugging
     return gulp.src(appVars.JS_Library)
         .pipe(concat('app.js'))
         .pipe(minify({

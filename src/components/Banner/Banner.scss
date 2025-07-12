@@ -6,7 +6,8 @@
     // background-attachment: fixed;
     // background-position: center -0.48125px;
     // background-position: -62px 0px;
-    padding: 120px 0 100px;
+    padding: 100px 0 80px;
+    border-bottom: 5px solid $primary;
     &::before{
         @include overlay($t:0,$l:0,$w:100%,$h:100%,$bg:rgba($color: #000000, $alpha: 1.0),$b:auto,$r:auto,$op:0.6);
     }
