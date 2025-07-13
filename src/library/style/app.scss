@@ -318,6 +318,10 @@ position: relative;
   background-position: left center;
   background-size: contain;
   padding: 100px 0;
+  .heading{
+    display: flex;
+    align-items: center;
+  }
   .image{
     img{
       width: 100%;
@@ -1822,9 +1826,6 @@ input{
 }
 //Modal for video
 .modal{
-  .modal-dialog{
-    max-width: 600px;
-  }
   .modal-content{
   background-color: $light-background;
 .modal-header{

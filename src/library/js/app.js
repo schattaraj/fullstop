@@ -121,7 +121,7 @@ var swiper4 = new Swiper('.swiper.swiper-our-team', {
 $(document).ready(function() {
   if(window.location.pathname == "/"){
 setTimeout(function() {
-  // $('#welcomeModal').modal('show');
+  $('#welcomeModal').modal('show');
 }, 1000);
   }
   
