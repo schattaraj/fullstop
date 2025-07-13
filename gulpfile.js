@@ -27,7 +27,7 @@ appVars = require('./src/library/js/plugins');
 // Merge All HTML
 gulp.task('fileinclude', async function () {
     gulp.src(['./src/*.html'])
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(plumber({errorHandler: notify.onError("ErrorFile: <%= error.message %>")}))
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -39,7 +39,7 @@ gulp.task('fileinclude', async function () {
 // HTML Validator
 gulp.task('htmlValidator', async function () {
     gulp.src(['./build/*.html'])
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(plumber({errorHandler: notify.onError("Errorhtml: <%= error.message %>")}))
         .pipe(validator())
         // .pipe(htmlValidator.reporter())
         .pipe(browserSync.reload({stream: true}));
@@ -62,7 +62,7 @@ gulp.task('styles', async function () {
     return gulp.src('./src/library/style/app.scss')
         // Compile SASS files
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+        .pipe(plumber({errorHandler: notify.onError("ErrorStyles: <%= error.message %>")}))
         .pipe(sourcemaps.init())
         // Auto-prefix css styles for cross browser compatibility
         .pipe(autoprefixer())
