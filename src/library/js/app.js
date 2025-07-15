@@ -119,10 +119,10 @@ var swiper4 = new Swiper('.swiper.swiper-our-team', {
   },
 });
 $(document).ready(function() {
-  if(window.location.pathname == "/"){
+  if(window.location.pathname == "/" && window.location.hostname != "localhost"){
 setTimeout(function() {
-  // $('#welcomeModal').modal('show');
-}, 1000);
+  $('#welcomeModal').modal('show');
+}, 2000);
   }
   
   let menus = document.querySelectorAll("header .navbar .nav-item .nav-link");
@@ -141,8 +141,8 @@ $(document).ready(function() {
 });
 
 var swiperCategories = new Swiper('.swiper-categories', {
-  slidesPerView: 3, // Adjust the number of visible categories
-  spaceBetween: 20, // Space between categories
+  slidesPerView: 2, // Adjust the number of visible categories
+  spaceBetween: 10, // Space between categories
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -157,7 +157,7 @@ var swiperCategories = new Swiper('.swiper-categories', {
       slidesPerView: 5, // For larger screens
     },
     768: {
-      slidesPerView: 2, // For tablets
+      slidesPerView: 3, // For tablets
     },
     480: {
       slidesPerView: 1, // For mobile devices

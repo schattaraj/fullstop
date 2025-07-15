@@ -44,4 +44,17 @@
         padding: 12px 30px 10px 16px;
       }
     }
+    @media (max-width:575px) {
+      img{
+        height: 220px;
+      }
+      .details{
+        .category-title{
+          font-size: 16px;
+        }
+        .btn{
+          padding: 12px 10px 10px 8px;
+        }
+      }
+    }
   }
