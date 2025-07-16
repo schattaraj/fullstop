@@ -524,6 +524,69 @@
     </div>
   </div>
 </div>
+ <!-- Chatbot HTML -->
+ <div id="chatbot-container">
+    <!-- Help Popup -->
+    <div id="help-popup" class="help-popup hidden">
+        <div class="help-popup-content">
+            <div class="help-dot"></div>
+            <span class="help-text">May I help You?</span>
+        </div>
+        <div class="help-popup-arrow"></div>
+    </div>
+  
+    <!-- Chat Button -->
+    <div id="chat-button" class="chat-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </div>
+  
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window hidden">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="bot-avatar">F</div>
+                <div class="bot-info">
+                    <h3>FullStop</h3>
+                    <p>Online</p>
+                </div>
+            </div>
+            <button id="close-chat" class="close-button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+  
+        <!-- Messages -->
+        <div id="messages-container" class="messages-container">
+            <!-- Messages will be added here dynamically -->
+        </div>
+  
+        <!-- Input Area -->
+        <div class="input-area">
+            <div id="country-code-select" class="country-code-select hidden">
+                <select id="country-code">
+                    <option value="+91">+91 India</option>
+                    <option value="+1">+1 USA</option>
+                    <option value="+44">+44 UK</option>
+                    <option value="+61">+61 Australia</option>
+                    <option value="+86">+86 China</option>
+                </select>
+            </div>
+            <div class="input-row">
+                <input type="text" id="message-input" placeholder="Select an option above..." disabled>
+                <button id="send-button" class="send-button" disabled>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
