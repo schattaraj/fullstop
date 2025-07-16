@@ -12,6 +12,11 @@
             width: 100%;
             object-fit: cover;
         }
+        video{
+            height: 256px;
+            width: 100%;
+            object-fit: cover;
+        }
         position: relative;
         .play{
             position: absolute;

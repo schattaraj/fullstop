@@ -1,11 +1,14 @@
 <div class="card">
     <div class="image">
-        <img src="@@src" alt="" loading="lazy">
+        @@if(this.item === "image"){
+            <img src="@@src" alt="" loading="lazy">
+        }        
         @@if(this.item === true){
-            <a href="#" data-toggle="modal" data-target="#exampleModal">
+            <!-- <a href="#" data-toggle="modal" data-target="#exampleModal">
          <div class="play">
              <i data-feather="play"></i>
-         </div></a>
+         </div></a> -->
+         <video src="/assets/videos/hero-2-video.mp4" poster="@@src" controls></video>
         }
     </div>
     <div class="text">

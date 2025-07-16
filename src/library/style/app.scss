@@ -10,6 +10,7 @@ html{
 body{
   overflow-x: hidden;
   color: $text;
+  position: relative;
 }
 //button css
 .btn{
@@ -733,7 +734,7 @@ background-color: $primary;
   position: relative;
   padding: 80px 0 0px;
   &::before{
-    @include overlay($t:0,$l:0,$w:100%,$h:60%,$bg:$primarydark,$b:auto,$r:auto,$op:1);
+    @include overlay($t:0,$l:0,$w:100%,$h:60%,$bg:$primary,$b:auto,$r:auto,$op:1);
   }
   .flex{
     display: flex;
@@ -1890,4 +1891,57 @@ input{
 }
 }
 }
+}
+.social-share {
+  position: fixed;
+  // top: 50%;
+  left: 0;
+  bottom: 20px;
+  // transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.social-share .share-btn {
+  background-color: #333;
+  // background-color: $primary;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s;
+}
+
+.social-share .share-btn:hover {
+  background-color: #555;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.social-icons a {
+  background-color: #333;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #555;
+}
+
+.social-share:hover .social-icons {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
