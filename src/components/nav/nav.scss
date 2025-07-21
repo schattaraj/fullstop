@@ -38,7 +38,7 @@
       }
       span{
         color: $primary;
-        font-size: 10px;
+        font-size: 15px;
         // font-weight: 600;
         font-family: "Pacifico", cursive;
         &.color{
@@ -176,7 +176,7 @@
      width: 100%;
      top:0;
      left: 0;
-     z-index: 2;
+     z-index: 9999;
      box-shadow: 0 0 23px 7px rgb(191,191,191,0.23);
      transform: translateY(-20px);
     opacity: 0;

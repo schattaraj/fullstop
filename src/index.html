@@ -31,7 +31,7 @@
     <span>categories</span>
     <h3>Choose Your Property type</h3>
   </div>
-  <div class="swiper swiper-categories">
+  <!-- <div class="swiper swiper-categories">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         @@include('./components/category/category.html', {"title": "Residential","img":"assets/images/service1.webp","properties":"17"})
@@ -58,8 +58,28 @@
         @@include('./components/category/category.html', {"title": "Retail","img":"assets/images/banner1.webp","properties":"17"})
       </div> 
     </div>
+  </div> -->
+<div class="row" data-aos="fade-in">
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Residential","img":"assets/images/service1.webp","properties":"17"})
   </div>
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Commercial","img":"assets/images/banner2.webp","properties":"17"})
   </div>
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Industrial","img":"assets/images/service2.webp","properties":"17"})
+  </div>
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Land","img":"assets/images/service3.webp","properties":"17"})
+  </div>
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Retail","img":"assets/images/banner1.webp","properties":"17"})
+  </div>
+  <div class="col-md-4">
+    @@include('./components/category/category.html', {"title": "Rented","img":"assets/images/banner1.webp","properties":"17"})
+  </div>
+</div>  
+</div>
 </section>
 <section class="about-us">
   <div class="container">
@@ -117,36 +137,43 @@
     </h3> -->
     <h2 class="title">Featured Properties</h2>
   </div>
-  <a href="#" class="btn btn-secondary"><span>View All</span>   
+  <a href="properties.html" class="btn btn-secondary d-none d-lg-block"><span>View All</span>   
     <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" />
     <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   </svg></a>
   </div>
-    <div class="row">
-      <div class="col-md-4" data-aos="fade-up">
-        @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service1.webp","address":"39581 Rohan Estates, New York","status":"ongoing"})
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        @@include('./components/property/property.html',{"title":"New apartment nice view New apartment nice view","img":"assets/images/service1.webp","address":"39581 Rohan Estates, New York","status":"ongoing"})
       </div>
-      <div class="col-md-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
         @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service2.webp","address":"39581 Rohan Estates, New York","status":"ready to move"})
       </div>
-      <div class="col-md-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
         @@include('./components/property/property.html',{"title":"New apartment nice view","img":"assets/images/service3.webp","address":"39581 Rohan Estates, New York","status":"completed"})
       </div>
-
     </div>
+    <div class="text-center d-lg-none">
+      <a href="properties.html" class="btn btn-secondary"><span>View All</span>   
+      <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg></a>
+  </div>
   </div>
 </section>
 <div class="design-and-build my-5">
   <div class="container">
   <div class="row align-items-center">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
           <div class="image">
               <img src="assets/images/banner1.webp" alt="">
           </div>
       </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
           <div class="text">
               <h3>Our Mission</h3>
               <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
@@ -159,7 +186,7 @@
       </div>
   </div>
   <div class="row align-items-center">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
           <div class="text">
               <h3>Our Vision</h3>
               <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
@@ -170,24 +197,9 @@
                   life by the state of the art, high-tech manufacturing technology</p>
           </div>
       </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
           <div class="image">
               <img src="assets/images/banner2.webp" alt="">
-          </div>
-      </div>
-  </div>
-  <div class="row align-items-center">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-          <div class="image">
-              <img src="assets/images/banner3.webp" alt="">
-          </div>
-      </div>
-      <div class="col-lg-6" data-aos="fade-up">
-          <div class="text">
-              <h3>Our Strategy</h3>
-              <!-- <p>our Design approach focuses on creating personalized, innovative spaces that balance beauty and functionality. We prioritize attention to detail and quality to bring each client's vision to life.</p> -->
-               <p>To Using innovative methods, latest technologies and expertise by investing in
-                researchers and developments.</p>
           </div>
       </div>
   </div>
@@ -198,15 +210,24 @@
   <h2 class="title text-center mb-4">Latest Post</h2>
   <div class="row">
     <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner1.webp","link":true})
+      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner1.webp","item":"image","link":true})
     </div>
     <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner2.webp","link":true})
+      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner2.webp","item":"image","link":true})
     </div>
     <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner3.webp","link":true})
+      @@include('./components/card/card.html',{"title":"Why Startups Must Liberate From Hiring Platforms","date":"01 October 2021","description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal ","src":"assets/images/banner3.webp","item":"image","link":true})
     </div>
   </div>
+  <div class="text-center">
+  <a href="blog.html" class="btn btn-secondary"><span>View All</span>   
+  <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round" />
+  <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a>
+</div>
+
 </div>
 </section>
 <div class="our-testimonial" data-aos="fade-up">

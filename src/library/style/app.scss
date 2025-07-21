@@ -60,6 +60,9 @@ body{
       transform: translate(4px);
     }
     }
+    @media (max-width:991px) {
+      padding: 12px 15px 9px 16px;
+    }
     @media (max-width:575.99px) {
       font-size: 14px;
       padding: 12px 16px;
@@ -344,6 +347,9 @@ position: relative;
 .categories{
   margin: 100px 0;
   margin-bottom: 40px;
+  @media (max-width:575.99px) {
+    margin: 50px 0;
+  }
 }
 //about section css
 .about-us{
@@ -408,13 +414,15 @@ position: relative;
   // background-color: rgba($primary, 0.25);
   background-color: $light-background;
   padding: 100px 0;
-  margin-bottom: 60px;
+  margin: 60px 0;
   .heading{
     margin-bottom: 4px;
   }
   .title{
     max-width: 600px;
     color: $text;
+    font-weight: bold;
+    margin-bottom: 16px;
   }
   .service{
     position: relative;
@@ -460,6 +468,7 @@ position: relative;
     }
   } 
   @media (max-width:767.99px) {
+    padding: 70px 0;
     .service{
       margin-bottom: 16px;
     }
@@ -468,7 +477,7 @@ position: relative;
   @media (max-width:420px) {
     padding: 50px 0;
     .title{
-      font-size: 32px;
+      font-size: 28px;
     }
     .service{
       img{
@@ -665,9 +674,7 @@ background-color: $primary;
   @media (max-width:991.99px) {
    height: auto; 
    .image{
-    img{
-      height: 300px;
-    }
+   display: none;
    }
    .text{
     padding: 40px 0;
@@ -954,7 +961,7 @@ background-color: $primary;
       object-fit: cover;
     }
   }
-  .sidebar-cta-Body{
+  .sidebar-cta-body{
     padding: 20px 32px;
     h3{
       font-size: 20px;
@@ -993,8 +1000,18 @@ background-color: $primary;
 }
 .blog-area{
   margin-bottom: 80px;
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .btn{
+      margin-bottom: 16px;
+    }
+  }
   .title{
     font-weight: 600;
+    font-size: 32px;
   }
   .card{
     .text{
@@ -1106,6 +1123,17 @@ background-color: $primary;
   &:last-child{
     margin-bottom: 0;
   }
+  }
+  &.contact-us{
+    background-color: $gray;
+    border: none;
+    h3{
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .form-control{
+      margin-bottom: 16px;
+    }
   }
 }
 .info{
@@ -1253,7 +1281,7 @@ background-color: $primary;
       height: 220px;
     }
     .cta{
-      .sidebar-cta-Body{
+      .sidebar-cta-body{
         padding: 20px;
         .sidebar-cta-contact-item{
           .icon-box{
@@ -1405,12 +1433,17 @@ img{
   }
   .right{
   .searchArea{
+    position: relative;
 form{
   background-color: $light-background;
 display: flex;
 justify-content: center;
 border-radius: 10px;
 overflow: hidden;
+&.data{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 input{
   padding: 0 16px;
   flex:1;
@@ -1430,13 +1463,49 @@ button{
   svg{
     stroke:$white;
   }
-}}
+}
+}
+ul{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  box-shadow: 0 10px 18px 4px rgba($gray,0.8);
+  border: 1px solid rgba($darkgray,0.2);
+  border-top: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  li{
+a{
+  padding: 8px 12px;
+  border-top: 1px solid rgba($gray,0.8);
+  display: block;
+  text-decoration: none;
+  color: $text;
+  &:hover{
+    background-color: $gray;
+  }
+}
+&:last-child{
+  a{
+    border-bottom: 1px solid rgba($gray,0.8);
+  }
+}
+  }
+  display: none;
+}
+form.data + ul{
+display: block;
+}
   }
   .head{
     font-size: 24px;
     margin-top: 40px;
   }
-  ul{
+  .posts{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1508,6 +1577,7 @@ button{
   .social{
     display: flex;
     a{
+      text-decoration: none;
       @include btn();
       width:40px;
       height: 40px;

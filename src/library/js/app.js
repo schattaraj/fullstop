@@ -245,7 +245,7 @@ class FullStopChatbot {
       
       this.chatFlow = [
           {
-              text: "👋 Welcome Message\n\nHi there! 👋 Welcome to Fullstop. I'm FullStop.",
+              text: "Hi there! 👋 Welcome to Fullstop. I'm FullStop.",
               delay: 1000
           },
           {
@@ -284,7 +284,7 @@ class FullStopChatbot {
               delay: 2000
           },
           {
-              text: "✅ Thank You Message\n\nThank you! 🎉 Your preferences have been saved. Our team will contact you soon with suitable options.",
+              text: "Thank you! 🎉 Your preferences have been saved. Our team will contact you soon with suitable options.",
               delay: 2000
           }
       ];
@@ -316,13 +316,18 @@ class FullStopChatbot {
   
   setupAutoPopup() {
       if (!this.autoPopupShown) {
+        if(localStorage.getItem("chatbot")){
+        }
+        else{
+          localStorage.setItem("chatbot",true);
           setTimeout(() => {
-              if (!this.isOpen) {
-                  this.openChat();
-                  this.playSound('popup');
-              }
-              this.autoPopupShown = true;
-          }, 10000);
+            if (!this.isOpen) {
+                this.openChat();
+                this.playSound('popup');
+            }
+            this.autoPopupShown = true;
+        }, 10000);
+        }
       }
   }
   
@@ -608,10 +613,16 @@ class FullStopChatbot {
   
   playSound(type) {
       // Sound effects implementation
-      console.log(`Playing ${type} sound`);
-      // You can add actual sound files later:
-      // const audio = new Audio(`sounds/${type}.mp3`);
-      // audio.play();
+      if (this.userHasInteracted) {
+          try {
+              const audio = new Audio(`/assets/sounds/live-chat-353605.mp3`);
+              audio.play().catch(error => {
+                  console.log('Audio playback failed:', error);
+              });
+          } catch (error) {
+              console.log('Audio creation failed:', error);
+          }
+      }
   }
   
   saveToGoogleSheets() {
@@ -723,7 +734,7 @@ class FullStopChatbot {
   }
   
   handleSaveSuccess() {
-      this.addMessage("✅ Information saved successfully! Our team has your details and will contact you soon.", true);
+      // this.addMessage("✅ Information saved successfully! Our team has your details and will contact you soon.", true);
       this.playSound('receive');
       this.showDataSummary();
   }

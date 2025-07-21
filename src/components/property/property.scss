@@ -72,6 +72,11 @@ background-color: #444;
             font-size: 20px;
             font-weight: 600;
             color: $text;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
         }
         .info{
             margin: 12px 0;
@@ -88,6 +93,19 @@ background-color: #444;
             }
             .btn{
                 margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width:767.99px) {
+        .text{
+            p{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .flex{
+                span{
+                    font-size: 14px;
+                }
             }
         }
     }
