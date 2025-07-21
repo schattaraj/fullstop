@@ -11,6 +11,11 @@
   top: 0;
   width: 100%;
   transition: all 0.3s;
+  background-color: $white;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s;
   nav.navbar {
     padding: 8px 8px;
     border-bottom: 1px solid rgb(255, 255, 255,0.1);
@@ -231,6 +236,12 @@
   }
 }
 
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes slideDown {
   to {
     transform: translateY(0);
