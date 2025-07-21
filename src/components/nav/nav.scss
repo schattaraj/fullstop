@@ -248,3 +248,29 @@
     opacity: 1;
   }
 }
+.header2{
+  .nav_area{
+    position: absolute;
+    background: transparent;
+    nav.navbar{
+      .navbar-brand{
+        img{
+          filter: brightness(899);
+        }
+        p{
+          color: $white;
+        }
+        span{
+          color: $white;
+        }
+      }
+      .navbar-nav{
+      .nav-item{
+        .nav-link{
+          color: $white;
+        }
+      }
+    }
+    }
+  }
+}
