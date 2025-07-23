@@ -372,7 +372,7 @@ position: relative;
       }
     }
     p{
-      font-size: 22px;
+      font-size: 18px;
     max-width: 75%;
     text-align: center;
     margin-bottom: 32px;
@@ -410,6 +410,28 @@ position: relative;
         border: none;
       }
     }
+  }
+  @media (max-width:575px) {
+   height: auto;
+   padding: 80px 0;
+    .content-area{
+    h3{font-size: 32px;}
+    p{font-size: 14px;}
+    .search-area{
+      width: calc(100% - 20px);
+      form{
+        justify-content: space-between;
+        .form-group{
+          width: calc(100% - 58px);
+        }
+        .btn{
+          .text{
+            display: none;
+          }
+        }
+      }
+    }
+  }
   }
 }
 .categories{

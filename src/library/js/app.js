@@ -874,3 +874,11 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+// Wait for the entire page to load
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = 0;
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
+});
