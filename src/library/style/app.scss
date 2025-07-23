@@ -1607,7 +1607,7 @@ display: block;
         border-radius: $radius;
         overflow: hidden;
         margin-bottom: 24px;
-        height: 120px;
+        height: 100px;
         &:last-child{
           margin-bottom: 0;
         }
@@ -1621,6 +1621,12 @@ display: block;
         .text{
           padding: 16px 16px;
           width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          span{
+            color: $primary;
+          }
           a{
             color: $text;
             text-decoration: none;
@@ -1662,6 +1668,19 @@ display: block;
           width: 100%;
         }
       }
+    }
+  }
+  .contact-us{
+    background-color: $gray;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    h3{
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .form-control{
+      margin-bottom: 16px;
     }
   }
   .social{
