@@ -1,0 +1,119 @@
+@@include('./components/header/header.html', {"title": "FullStop"})
+@@include('./components/nav/nav.html')
+@@include('./components/banner/banner.html',{"title":"Other Services"})
+<!-- Other Services Section -->
+<!-- Other Services Section -->
+<div class="container my-5 py-5">
+    <!-- <h2 class=" mb-4 section-title">Other Services</h2> -->
+    <div class="row">
+  
+      <!-- Loan Processing (Image on the Left) -->
+      <div class="col-md-12 mb-4">
+        <div class="card service-card ">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <img src="/assets/images/one.jpg" class="card-img" alt="Loan Processing">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body ">
+                <h5 class="card-title">Loan Processing</h5>
+                <p class="card-text">At FULLSTOP, we understand that financing is a crucial step in your real estate journey. That’s why our experienced team offers end-to-end support to simplify the loan process. Whether you're buying a home, commercial property, or investment asset, we help you identify the best loan options, compare interest rates, handle documentation, and liaise with financial institutions on your behalf.
+                    From consultation to disbursal — FULLSTOP ensures a smooth, stress-free loan experience.
+                    </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Interior Design (Text on the Left, Image on the Right) -->
+      <div class="col-md-12 mb-4">
+        <div class="card service-card ">
+          <div class="row no-gutters">
+            <div class="col-md-6 order-md-2">
+              <img src="/assets/images/two.jpg" class="card-img" alt="Interior Design">
+            </div>
+            <div class="col-md-6 order-md-1">
+              <div class="card-body ">
+                <h5 class="card-title">Interior Design</h5>
+                <p class="card-text">The right interiors can transform a house into a home or an office into a powerhouse. At FULLSTOP, our interior design experts work closely with you to create spaces that blend aesthetics, comfort, and functionality. Whether you're seeking modern minimalism, traditional elegance, or efficient workspaces — we deliver customized solutions that reflect your personality and purpose.
+                    With FULLSTOP, your space isn’t just designed — it’s brought to life.
+                    </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Vastu Assistance (Image on the Left) -->
+      <div class="col-md-12 mb-4">
+        <div class="card service-card ">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <img src="/assets/images/three.jpg" class="card-img" alt="Vastu Assistance">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body ">
+                <h5 class="card-title">Vastu Assistance</h5>
+                <p class="card-text">At FULLSTOP, we believe that a property should offer not just comfort, but also positive energy and balance. Our certified Vastu consultants analyze your space and provide science-backed guidance to enhance harmony, well-being, and prosperity. From layout alignment to elemental balancing, we offer practical, non-invasive solutions that elevate your living or working environment.
+                    Let FULLSTOP align your property with the power of positivity.
+                    </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="text-center">
+    <a href="#" class="btn btn-primary contact-btn" data-toggle="modal" data-target="#contactUsModal"><span>Contact Us</span></a>
+</div>
+    <!-- <div class=" mt-4">
+      <p class="lead">You choose your property, we handle the rest.</p>
+    </div> -->
+  </div>
+  <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jobApplicationModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="applicantName">Full Name</label>
+              <input type="text" class="form-control" id="applicantName" required>
+            </div>
+            <div class="form-group">
+              <label for="applicantEmail">Email address</label>
+              <input type="email" class="form-control" id="applicantEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="applicantPhone">Phone</label>
+                <input type="text" class="form-control" id="applicantPhone" required>
+              </div>
+            <div class="form-group">
+              <label for="applicantMessage">Message</label>
+              <textarea class="form-control" id="applicantMessage" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn">
+                <span>Send Message</span> <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.99585 12L32.9959 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M26 5L33 12L26 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')

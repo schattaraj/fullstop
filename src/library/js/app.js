@@ -119,16 +119,20 @@ var swiper4 = new Swiper('.swiper.swiper-our-team', {
   },
 });
 $(document).ready(function() {
-  if(window.location.pathname == "/" && window.location.hostname != "localhost"){
-setTimeout(function() {
-  $('#welcomeModal').modal('show');
-}, 2000);
-  }
+//   if(window.location.pathname == "/" && window.location.hostname != "localhost"){
+// setTimeout(function() {
+//   $('#welcomeModal').modal('show');
+// }, 2000);
+//   }
   
   let menus = document.querySelectorAll("header .navbar .nav-item .nav-link");
 for (let index = 0; index < menus.length; index++) {
   const element = menus[index];
-  if(window.location.href == element.href){
+  let url = window.location.href;
+if (url.endsWith('/')) {
+  url = url.slice(0, -1);
+}
+  if(url == element.href){
     element.parentElement.classList.add("active");
   }
   

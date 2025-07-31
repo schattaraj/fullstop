@@ -1,0 +1,65 @@
+@@include('./components/header/header.html', {"title": "FullStop"})
+@@include('./components/nav/nav.html')
+@@include('./components/banner/banner.html',{"title":"Career"})
+<!-- Careers Section -->
+<section class="careers">
+    <div class="container">
+      <h2 class="section-title">Join Our Team</h2>
+      <p class="section-description">
+        We're looking for passionate, talented individuals to grow with us.
+      </p>
+      <h3 class="heading">Current Opening</h3>
+      <div class="job-listings">
+        <div class="job-card">
+          <h3>Telecaller</h3>
+          <p>Location: Onsite | Type: Full-Time</p>
+          <p>We're seeking a Telecaller with good communication skill.</p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#jobApplicationModal"><span>Apply Now</span></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Job Application Modal (Bootstrap 4) -->
+<div class="modal fade" id="jobApplicationModal" tabindex="-1" role="dialog" aria-labelledby="jobApplicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jobApplicationModalLabel">Apply for Job</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="applicantName">Full Name</label>
+              <input type="text" class="form-control" id="applicantName" required>
+            </div>
+            <div class="form-group">
+              <label for="applicantEmail">Email address</label>
+              <input type="email" class="form-control" id="applicantEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="applicantPhone">Phone</label>
+                <input type="text" class="form-control" id="applicantPhone" required>
+              </div>
+            <div class="form-group">
+              <label for="applicantResume">Upload Resume</label>
+              <input type="file" class="form-control-file" id="applicantResume" required>
+            </div>
+            <div class="form-group">
+              <label for="applicantMessage">Message</label>
+              <textarea class="form-control" id="applicantMessage" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+@@include('./components/footer/footer.html')
+@@include('./components/footerscript/footerscript.html')
